@@ -1,0 +1,23 @@
+{
+  "name": "support-review-workspace",
+  "version": "1.0.0",
+  "description": "A full stack project that reviews AI drafted support responses and provides feedback to improve them. The project includes a front-end built with React, a back-end built with Node.js and Express, and a database for storing support responses and feedback.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx server/src/index.ts",
+    "build": "tsc",
+    "start": "node dist/server/src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "typescript",
+    "nodejs",
+    "rest-api",
+    "full-stack",
+    "customer-support",
+    "feedback-system"
+  ],
+  "author": "",
+  "license": "MIT",
+  "type": "module"
+}
