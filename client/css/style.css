@@ -12,17 +12,26 @@ body {
 }
 
 main {
-  max-width: 900px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
-h1 {
+.page-header {
   margin-bottom: 32px;
+}
+
+h1 {
+  margin: 0 0 8px;
   font-size: 32px;
   color: #17202a;
 }
 
-section {
+.page-header p {
+  margin: 0;
+  color: #5f6b73;
+}
+
+.review-section {
   margin-bottom: 24px;
   padding: 24px;
   background-color: #ffffff;
@@ -30,15 +39,39 @@ section {
   border-radius: 8px;
 }
 
-h2 {
+.review-section h2 {
   margin-top: 0;
   margin-bottom: 16px;
   font-size: 20px;
   color: #263238;
 }
 
-p {
+.review-section p {
   margin: 0;
   font-size: 16px;
   color: #3f4b52;
+}
+
+.comparison-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.knowledge-field {
+  margin-bottom: 20px;
+}
+
+.knowledge-field:last-child {
+  margin-bottom: 0;
+}
+
+.knowledge-field h3 {
+  margin: 0 0 6px;
+  font-size: 14px;
+  color: #52606d;
+}
+
+.knowledge-field p {
+  margin: 0;
 }

@@ -1,3 +1,12 @@
+const customerQuestion = {
+  text: "When will my next billing date be?"
+};
+
+const aiDraftReply = {
+  text:
+    "Your next billing date is scheduled for the same date each month as your original subscription date. You can check your account details for the exact date."
+};
+
 const approvedKnowledge = {
   id: "billing-date-policy-001",
   title: "Monthly Billing Date Policy",
@@ -23,6 +32,22 @@ function validateKnowledgeRecord(record) {
   return true;
 }
 
-validateKnowledgeRecord(approvedKnowledge);
+function renderReviewPage() {
+  document.querySelector("#customer-question").textContent =
+    customerQuestion.text;
 
-console.log("Knowledge record validation passed.");
+  document.querySelector("#ai-draft-reply").textContent =
+    aiDraftReply.text;
+
+  document.querySelector("#knowledge-title").textContent =
+    approvedKnowledge.title;
+
+  document.querySelector("#knowledge-source").textContent =
+    approvedKnowledge.source;
+
+  document.querySelector("#knowledge-policy").textContent =
+    approvedKnowledge.policyText;
+}
+
+validateKnowledgeRecord(approvedKnowledge);
+renderReviewPage();
